@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --red: #ff4848;
+    --yellow: #ffaf01;
+    --dark-blue: #1263a1;
+    --hover-dark-blue: #034980;
+    --blue-background: #b4daf386;
+    --gray: #474646;
+    --off-white: #f6f6f6fe;
+}
+.container {
+    padding: 20px 0  20px 80px;
+    font-family: 'Edu VIC WA NT Beginner';
+    background-image: url(../imgs/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    font-size: 30px;
+}
+h1,
+h2,
+h3{
+    font-family: 'Merienda';
+    color: var(--dark-blue);
+    text-transform: capitalize;
+    padding: 5px 0;
+    width: 100%;
+    text-shadow: 2.4px -1.5px 0.5px var(--yellow);
+}
+h3{
+    transform: translateX(5px);
+    text-decoration: underline;
+}
+li ,
+.interest-list{
+    transform: translateX(35px);
+}
+.name{
+    text-align: center;
+}
+.icon {
+    font-size: 25px;
+    padding-right: 10px;
+    color: var(--yellow);
+}
+a{
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: bold;
+}
+.desc,
+.contact,
+.social,
+.experiance,
+.education,
+.Programming,
+.Interests,
+.Table table,
+.contact-us,
+.contact-info{
+    background-color: var(--blue-background);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 45%;
+    transition: all .9s ease-in-out;
+    border: 2px solid var(--dark-blue);
+    cursor: pointer;
+}
+p,
+li,
+.interest-list,
+label,
+.Table table td,
+.contact-info div{
+    color: var(--gray);
+    font-weight: bold;
+    margin: 5px;
+}
+.social i.icon:hover,
+a:hover{
+    transform: scale(1.01);
+    color: var(--red);
+}
+.interest-list ,
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.interest-list span,
+.contact-me a {
+    margin: 5px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 8px;
+}
+.input input {
+    width: 300px;
+    height: 20px;
+    padding: 5px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn input {
+    height: 25px;
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn input:hover{
+    background-color: var(--hover-dark-blue);
+}
+.Table {
+    width: 100%;
+}
+.Table, 
+.map {
+    margin-top: 20px;
+}
+.map iframe{
+    border-radius: 50%;
+    border: 2px solid var(--dark-blue);
+    width: 400px;
+    height: 400px;
+}
+.Table table{
+    text-align: center;
+    border-collapse: collapse;
+}
+.Table table thead {
+    background-color: var(--hover-dark-blue);
+    color: var(--off-white);
+    font-weight:bolder ;
+}
+.Table table th, .Table table td {
+    width: 100% inherit;
+    border: 2px solid var(--dark-blue);
+    background-color: var(--blue-background);
+}
+.Table table td:hover{
+    background-color: var(--off-white);
+    cursor: pointer;
+}
+@media (max-width:992px) {
+    .desc,
+    .contact,
+    .social,
+    .experiance,
+    .education,
+    .Programming,
+    .Interests,
+    .Table table,
+    .contact-us,
+    .contact-info{
+        width: 65%;
+    }
+}
+@media (max-width:768px) {
+    .container {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .desc,
+    .contact,
+    .social,
+    .experiance,
+    .education,
+    .Programming,
+    .Interests,
+    .Table table,
+    .contact-us,
+    .contact-info{
+        width: 85%;
+    }
+    .Table table {
+        margin: 0 auto;
+    }
+}
+@media (max-width:576px) {
+    h1 , h2 {
+        transform: scale(0.8);
+    }
+    .map iframe {
+        width: 250px;
+        height: 250px;
+    }
+}
